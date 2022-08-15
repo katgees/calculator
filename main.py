@@ -21,7 +21,7 @@ class Calculator:
         # Assign a position for the equation line in the grey application window
         self.equation.grid(row=0, column=0, columnspan=4, padx=10, pady=10)
 
-        # Execute the .createButton() method
+        # Execute the .creteButton() method
         self.createButton()
 
     def createButton(self):
@@ -44,12 +44,12 @@ class Calculator:
         b7 = self.addButton(7)
         b8 = self.addButton(8)
         b9 = self.addButton(9)
-        b_add = self.addButton("+")
-        b_sub = self.addButton("-")
-        b_mult = self.addButton("*")
-        b_div = self.addButton("/")
-        b_clear = self.addButton("c")
-        b_equal = self.addButton("=")
+        b_add = self.addButton('+')
+        b_sub = self.addButton('-')
+        b_mult = self.addButton('*')
+        b_div = self.addButton('/')
+        b_clear = self.addButton('c')
+        b_equal = self.addButton('=')
 
         # Arrange the buttons into lists which represent calculator rows
         row1 = [b7, b8, b9, b_add]
@@ -69,52 +69,20 @@ class Calculator:
     def addButton(self, value):
         """
         Method to process the creation of a button and make it clickable
-
         INPUT: value of the button (1,2,3,4,5,6,7,8,9,0,+,-,*,/,c,=)
         OUTPUT: returns a designed button object
         """
 
-        return Button(
-            self.master,
-            text=value,
-            width=9,
-            command=lambda: self.clickButton(str(value)),
-        )
-
-    def clickButton(self, value):
-        """
-        Method to add actions for button clicks
-
-        INPUT: value of the button (1,2,3,4,5,6,7,8,9,0,+,-,*,/,c,=)
-        OUTPUT: what action will be performed when a particular button is clicked
-        """
-
-        # Get the equation that's entered by the user
-        current_equation = str(self.equation.get())
-
-        # If user clicked "c", then clear the screen
-        if value == "c":
-            self.equation.delete(-1, END)
-
-        # If user clicked "=", then compute the answer and display it
-        elif value == "=":
-            answer = str(eval(current_equation))
-            self.equation.delete(-1, END)
-            self.equation.insert(0, answer)
-
-        # If user clicked any other button, then add it to the equation line
-        else:
-            self.equation.delete(0, END)
-            self.equation.insert(-1, current_equation + value)
+        return Button(self.master, text=value, width=9)
 
 
 # Execution
-if __name__ == "__main__":
+if __name__ == '__main__':
     # Create the main window of an application
     root = Tk()
 
     # Tell our calculator class to use this window
     my_gui = Calculator(root)
 
-    # Executable loop for the application, waits for user input
+    # Executable loop on the application, waits for user input
     root.mainloop()
