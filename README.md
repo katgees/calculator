@@ -16,9 +16,18 @@ Starting the project:
   - https://pyshark.com/basic-gui-calculator-in-python/
 - copy/paste into main
 
-(3) Install PIP via the Command Prompt:
+(3) Install pip via the Command Prompt:
 - check python installation [$ python --version]
   - if not installed use Windows store to download (PyCharm must be exited)
 - How to Install PIP on Windows ?
   - https://www.geeksforgeeks.org/how-to-install-pip-on-windows/
 - check PIP version [$ pip --version]
+
+(4) Install auto-py-to-exe via the Command Prompt:
+- Convert a Python Project to an Executable (.exe) File
+  - https://python.plainenglish.io/convert-a-python-project-to-an-executable-exe-file-175080da4485
+
+
+References:
+- Write Data to Excel using Python
+  - https://pythoninoffice.com/write-data-to-excel-using-python/
