@@ -21,5 +21,4 @@ Starting the project:
   - if not installed use Windows store to download (PyCharm must be exited)
 - How to Install PIP on Windows ?
   - https://www.geeksforgeeks.org/how-to-install-pip-on-windows/
-
-
+- check PIP version [$ pip --version]
