@@ -18,7 +18,7 @@ Converting python project to executable via auto-py-to-exe
     - if not installed: exit PyCharm and install via Windows Store
 3. check pip installation [$ pip --version]
     - if not installed: follow https://www.geeksforgeeks.org/how-to-install-pip-on-windows/
-4. check git version [$ git -- version]
+4. check git version [$ git --version]
 
 *Follow "Installing Via GitHub" steps https://github.com/brentvollebregt/auto-py-to-exe)*
 
