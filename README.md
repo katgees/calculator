@@ -28,8 +28,3 @@ Converting python project to executable via auto-py-to-exe
 8. execute [$ python -m pip install -r requirements.txt]
 9. run [$ python -m auto_py_to_exe] which will run the application in a Chrome/Edge window
 10. use the application to convert python project to executable
-
-References:
-
-- Convert a Python Project to an Executable (.exe) File
-    - https://python.plainenglish.io/convert-a-python-project-to-an-executable-exe-file-175080da4485
